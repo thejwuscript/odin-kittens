@@ -1,0 +1,14 @@
+<h1>Kitten Profile</h1>
+
+
+<ul>
+  <li>Name: <%= @kitten.name %></li>
+  <li>Age: <%= @kitten.age %></li>
+  <li>Cuteness: <%= @kitten.cuteness %></li>
+  <li>Softness: <%= @kitten.softness %></li>
+</ul>
+
+<a href="/kittens/<%= @kitten.id %>/edit">Edit kitten info</a>
+<br>
+<a href="/kittens/<%= @kitten.id %>" data-turbo-method="delete", data-turbo-confirm="Are you sure?">Delete Kitten</a>
+

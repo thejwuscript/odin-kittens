@@ -1,0 +1,11 @@
+<h1>List of All Kittens</h1>
+
+
+<ol>
+  <% @kittens.each do |kitten| %>
+    <%= render "kitten", :kitten => kitten %>
+  <% end %>
+</ol>
+
+<a href="/kittens/new">New Kitten Form</a>
+
